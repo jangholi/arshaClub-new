@@ -1,0 +1,302 @@
+body{
+    font-family: 'diodrum'!important;
+    height: 100%;
+}
+html{
+    height: 100%;
+}
+/* -------------------------------------------------- first section */
+.slider{
+    height: calc(100% - 212px)!important;
+}
+.slider img{
+    width: 100%;
+}
+.slick-slider{
+    height: calc(100% - 212px)!important;
+}
+.slick-track{
+    height: 100%!important;
+}
+.slick-list{
+    height: 100%!important;
+}
+.slick-slide{
+    height: 100%!important;
+}
+.logo-intro{
+    min-height: 80px!important;
+}
+.menu-intro{
+    min-height: 132px;
+    background-color:  #f9f9f9;
+}
+.menu-intro div{
+    min-height: 82px;
+}
+@media only screen and (min-width: 994px) {
+    .registery-div{
+        border-right: 1px solid #0060AE;
+        border-left: 1px solid #0060AE;
+        min-height: 81px;
+    }
+    .section2-right-div{
+        background-image: url("../assets/images/about-arsha.svg");
+    }
+}
+@media only screen and (max-width: 994px) {
+    .registery-div{
+        border-top: 1px solid #0060AE;
+        border-bottom: 1px solid #0060AE;
+        min-height: 81px;
+        width: fit-content;
+        margin: 0 auto;
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+    .section2-right-div{
+        background-image: url("../assets/images/about-arsha.svg");
+    }
+}
+.blue-title{
+    font-size: 18px;
+    color: #0060AE;
+    font-family: 'diodrumSemibold';
+}
+.slick-dots{
+    bottom: 16px!important;
+}
+.slick-dotted.slick-slider{
+    margin-bottom: 0!important;
+}
+.heigh51{
+    height: 51px!important;
+}
+.hedset-icon{
+    height: 26px!important;
+    position: absolute;
+    left: 0;
+}
+.first-slide{
+    background-image: url("../assets/images/slide-01.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+.second-slide{
+    background-image: url("../assets/images/slide-02.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+.third-slide{
+    background-image: url("../assets/images/slide-03.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+.slick-dots li button:before{
+    opacity: 1!important;
+    color: white!important;
+}
+.slick-dots li.slick-active button:before{
+    color: #b3b3b3!important;
+    font-size: 10px;
+}
+/* -------------------------------------------------- second section */
+.section2-right-div{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    min-height: 400px;
+}
+.light-gray-bg{
+    background-color: #f9f9f9!important;
+}
+/* -------------------------------------------------- third section */
+.light-title{
+    font-size: 18px;
+    color: rgb(179, 179, 179);
+    font-family: 'diodrumSemibold';
+}
+.submit-btn{
+    background-color: #b3b3b3!important;
+    font-size: 12px;
+    font-family: 'diodrumSemibold';
+    color: #ffffff!important;
+    padding: 2px 40px!important;
+    border-radius: 0!important;
+}
+.description{
+    font-size: 12px;
+    line-height: 30px;
+}
+/* -------------------------------------------------- four three */
+.wide-blue-header{
+    height: 54px!important;
+    font-family: diodrumBold;
+    font-size: 18px;
+    padding-right: 10px;
+    padding-left: 10px;
+    color: white!important;
+}
+.thin-blue-header{
+    height: 31px!important;
+    font-family: diodrumSemibold;
+    font-size: 18px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.description-tr td{
+    padding-top: 20px!important;
+    padding-bottom: 20px!important;
+    color: rgb(0, 50, 85);
+    font-size: 16px;
+    font-family: diodrumSemibold;
+}
+.height130{
+    height: 130px!important;
+}
+.go-to-table{
+    font-size: 18px;
+    font-family: diodrumSemibold;
+    color: rgb(0, 50, 85);
+}
+@media only screen and (max-width: 576px) {
+    table tr.wide-blue-header td{
+        font-size: 13px!important;
+    }
+    .description-tr td{
+        font-size: 13px!important;
+    }
+    table tr td:first-child{
+        font-size: 13px!important;
+    }
+    .go-to-table {
+        font-size: 15px!important;
+    }
+    .green-color {
+        font-size: 15px!important;
+    }
+    .blue-title {
+        font-size: 15px;
+    }
+    .light-title {
+        font-size: 15px;
+    }
+}
+/* -------------------------------------------------- footer */
+.border-btm-footer{
+    border-bottom: 1px solid white;
+    padding-bottom: 20px;
+}
+.footer-font{
+    color: white;
+    font-size: 12px;
+    font-family: diodrum;
+}
+.scale-image{
+    transform: scale(0.8)!important;
+    margin-left: 18px;
+}
+/* -------------------------------------------------- global classes */
+.mt-30{
+    margin-top: 30px!important;
+}
+.mb-30{
+    margin-bottom: 30px!important;
+}
+.pt-60{
+    padding-top: 60px!important;
+}
+.pb-60{
+    padding-bottom: 60px!important;
+}
+.pt-90{
+    padding-top: 90px!important;
+}
+.pb-90{
+    padding-bottom: 90px!important;
+}
+input{
+    border-radius: 0!important;
+}
+.green-color{
+    color: rgb(0, 165, 81);
+    font-size: 18px;
+    font-family: 'diodrumSemibold';
+}
+.gray-bg{
+    background-color: rgb(230, 231, 232)!important;
+}
+.dark-blue-bg{
+    background-color: #003054;
+}
+.white-color{
+    color: white;
+}
+.justify{
+    text-align: justify!important;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: rgb(179, 179, 179)!important;
+    font-size: 12px;
+    font-family: 'diodrumSemibold';
+}
+::-moz-placeholder { /* Firefox 19+ */
+    color: rgb(179, 179, 179)!important;
+    font-size: 12px;
+    font-family: 'diodrumSemibold';
+}
+:-ms-input-placeholder { /* IE 10+ */
+    color: rgb(179, 179, 179)!important;
+    font-size: 12px;
+    font-family: 'diodrumSemibold';
+}
+:-moz-placeholder { /* Firefox 18- */
+    color: rgb(179, 179, 179)!important;
+    font-size: 12px;
+    font-family: 'diodrumSemibold';
+}
+input ,button{
+    height: 31px!important;
+}
+.pointer{
+    cursor: pointer!important;
+}
+.pt-40{
+    padding-top: 40px!important;
+}
+.pb-40{
+    padding-bottom: 40px!important;
+}
+.mt-50{
+    margin-top: 50px!important;
+}
+table tr td:first-child{
+    padding-right: 10px!important;
+    font-size: 16px;
+    font-family: diodrumSemibold;
+}
+table tr.wide-blue-header td{
+    padding-right: 10px!important;
+    font-size: 16px;
+    font-family: diodrumBold!important;
+}
+table{
+    color: rgb(0, 50, 85);
+    font-size: 14px;
+    font-family: diodrumMedium;
+}
+table tr{
+    height: 31px!important;
+}
+.fa-check{
+    font-size: 13px!important;
+}
+.fa-minus:before{
+    font-size: 7px!important;
+}
+.ml-20{
+    margin-left: 20px;
+}

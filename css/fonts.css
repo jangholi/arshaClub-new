@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'diodrum';
+  src: url("../assets/fonts/DiodrumArabic-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "diodrumBold";
+  src: url("../assets/fonts/DiodrumArabic-Bold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "diodrumMedium";
+  src: url("../assets/fonts/DiodrumArabic-Medium.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "diodrumSemibold";
+  src: url("../assets/fonts/DiodrumArabic-Semibold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
