@@ -1,18 +1,18 @@
-$('#aboutMenu').click(function() {
-    $('html, body').animate({
-        scrollTop: $("#about").offset().top
-    }, 2000);
-})
+// $('#aboutMenu').click(function() {
+//     $('html, body').animate({
+//         scrollTop: $("#about").offset().top
+//     }, 2000);
+// })
 $('#registerMenu').click(function() {
     $('html, body').animate({
         scrollTop: $("#register").offset().top
     }, 2000);
 })
-$('#packagesMenu').click(function() {
-    $('html, body').animate({
-        scrollTop: $("#packages").offset().top
-    }, 2000);
-})
+// $('#packagesMenu').click(function() {
+//     $('html, body').animate({
+//         scrollTop: $("#packages").offset().top
+//     }, 2000);
+// })
 $('#3MonthBaseMenu').click(function() {
     $('html, body').animate({
         scrollTop: $("#3MonthBase").offset().top

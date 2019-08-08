@@ -73,9 +73,7 @@ html{
     height: 51px!important;
 }
 .hedset-icon{
-    height: 26px!important;
-    position: absolute;
-    left: 0;
+    height: 83px!important;
 }
 .first-slide{
     background-image: url("../assets/images/slide-01.svg");
@@ -102,6 +100,27 @@ html{
 .slick-dots li.slick-active button:before{
     color: #b3b3b3!important;
     font-size: 10px;
+}
+.arsha-logo{
+    position: absolute;
+    right: 0!important;
+}
+.auth{
+    margin-bottom: 0;
+    font-size: 15px;
+    color: #0060AE;
+    font-family: 'diodrumSemibold';
+    cursor: pointer;
+}
+.ltr{
+    direction: ltr;
+}
+.auth-separetor{
+    border-right: 1px solid #0060AE;
+    margin-bottom: 0!important;
+    margin-right: 7px;
+    margin-left: 4px;
+    height: 16px;
 }
 /* -------------------------------------------------- second section */
 .section2-right-div{
@@ -299,4 +318,7 @@ table tr{
 }
 .ml-20{
     margin-left: 20px;
+}
+a{
+    text-decoration: none!important;
 }
