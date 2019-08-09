@@ -69,3 +69,13 @@ $("#arsha-facility").slick({
         }
     ]
 });
+$("#about-arsha-slider").slick({
+    dots: true,
+    autoplay: true,
+    autoplaySpeed: 1500,
+    arrows: false,
+    rtl: true,
+    pauseOnFocus: false,
+    pauseOnHover: false,
+    pauseOnDotsHover: false
+});
