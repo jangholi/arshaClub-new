@@ -1,18 +1,8 @@
-// $('#aboutMenu').click(function() {
-//     $('html, body').animate({
-//         scrollTop: $("#about").offset().top
-//     }, 2000);
-// })
 $('#registerMenu').click(function() {
     $('html, body').animate({
         scrollTop: $("#register").offset().top
     }, 2000);
 })
-// $('#packagesMenu').click(function() {
-//     $('html, body').animate({
-//         scrollTop: $("#packages").offset().top
-//     }, 2000);
-// })
 $('#3MonthBaseMenu').click(function() {
     $('html, body').animate({
         scrollTop: $("#3MonthBase").offset().top
@@ -39,7 +29,6 @@ $('#learnMenu').click(function() {
     }, 2000);
 })
 $(".into-slider").slick({
-    // rtl: true,
     dots: true,
     autoplay: true,
     autoplaySpeed: 1500,
@@ -48,4 +37,35 @@ $(".into-slider").slick({
     pauseOnFocus: false,
     pauseOnHover: false,
     pauseOnDotsHover: false
+});
+$("#arsha-facility").slick({
+    dots: true,
+    autoplay: true,
+    autoplaySpeed: 1500,
+    arrows: false,
+    rtl: true,
+    pauseOnFocus: false,
+    pauseOnHover: false,
+    pauseOnDotsHover: false,
+    slidesToShow: 4,
+    responsive: [
+        {
+            breakpoint: 1350,
+            settings: {
+                slidesToShow: 3
+            }
+        },
+        {
+            breakpoint: 1000,
+            settings: {
+                slidesToShow: 2
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1
+            }
+        }
+    ]
 });
