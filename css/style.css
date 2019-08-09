@@ -130,10 +130,46 @@ html{
     width: 100%;
     height: 100%;
     object-fit: cover!important;
-    padding: 15px;
 }
 .facility .slick-slide{
     height: 450px!important;
+}
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #ffffff6b;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+.overlay-container {
+    position: relative;
+    width: 100%;
+    padding-right: 15px!important;
+    padding-left: 15px!important;
+}
+.overlay-container:hover .overlay {
+    height: 20%;
+}
+.overlay-title {
+    color: #0060AE;
+    font-family: 'diodrumSemibold';
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 /* -------------------------------------------------- second section */
 .section2-right-div{
