@@ -433,3 +433,6 @@ a{
 .medium{
     font-family: diodrumMedium;
 }
+.about-header{
+    object-position: bottom;
+}
