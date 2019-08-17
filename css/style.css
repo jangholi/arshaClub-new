@@ -414,3 +414,9 @@ a{
 .medium{
     font-family: diodrumMedium;
 }
+/*-------------------------------------------------*/
+.pool-list{
+    font-family: diodrumMedium;
+    margin-right: 16px;
+    padding-right: 0;
+}
