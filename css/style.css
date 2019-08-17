@@ -416,7 +416,14 @@ a{
 }
 /*-------------------------------------------------*/
 .pool-list{
-    font-family: diodrumMedium;
+     font-family: diodrumMedium;
+     margin-right: 16px;
+     padding-right: 0;
+}
+.sport-list{
     margin-right: 16px;
     padding-right: 0;
+}
+.sport-list li{
+    margin-bottom: 20px;
 }
