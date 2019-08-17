@@ -427,3 +427,9 @@ a{
 .sport-list li{
     margin-bottom: 20px;
 }
+.proshop-header{
+    object-position: top;
+}
+.medium{
+    font-family: diodrumMedium;
+}
