@@ -66,6 +66,9 @@ html{
 .into-slider .slick-dots{
     bottom: 16px!important;
 }
+.slick-dots{
+    bottom: -56px!important;
+}
 .slick-dotted.slick-slider{
     margin-bottom: 0!important;
 }
@@ -417,7 +420,6 @@ a{
 .medium{
     font-family: diodrumMedium;
 }
-/*-------------------------------------------------*/
 .pool-list{
      font-family: diodrumMedium;
      margin-right: 16px;
