@@ -89,16 +89,19 @@ html{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
+    display: none;
 }
 .third-slide{
     background-image: url("../assets/images/slide-03.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
+    display: none;
 }
 .into-slider .slick-dots li button:before{
     opacity: 1!important;
     color: white!important;
+    overflow: hidden!important;
 }
 .slick-dots li.slick-active button:before{
     color: #b3b3b3!important;
@@ -416,4 +419,25 @@ a{
 }
 .medium{
     font-family: diodrumMedium;
+}
+.pool-list{
+     font-family: diodrumMedium;
+     margin-right: 16px;
+     padding-right: 0;
+}
+.sport-list{
+    margin-right: 16px;
+    padding-right: 0;
+}
+.sport-list li{
+    margin-bottom: 20px;
+}
+.proshop-header{
+    object-position: top;
+}
+.medium{
+    font-family: diodrumMedium;
+}
+.about-header{
+    object-position: bottom;
 }
