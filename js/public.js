@@ -28,6 +28,7 @@ $('#learnMenu').click(function() {
         scrollTop: $("#learn").offset().top
     }, 2000);
 })
+// index slider
 $(".into-slider").slick({
     dots: true,
     autoplay: true,
@@ -69,7 +70,17 @@ $("#arsha-facility").slick({
         }
     ]
 });
-$("#about-arsha-slider").slick({
+// $("#about-arsha-slider").slick({
+//     dots: true,
+//     autoplay: true,
+//     autoplaySpeed: 1500,
+//     arrows: true,
+//     rtl: true,
+//     pauseOnFocus: false,
+//     pauseOnHover: false,
+//     pauseOnDotsHover: false
+// });
+$("#arsha-slider").slick({
     dots: true,
     autoplay: true,
     autoplaySpeed: 1500,
