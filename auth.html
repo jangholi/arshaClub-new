@@ -23,100 +23,40 @@
     </div>
 </div>
 <!-- second section -->
-<div class="col-md-10 offset-md-1 mb-100">
-    <div class="col-md-12">
-        <button class="btn arsha-btn mt-80 text-left pl-50">
-            محصولات
-        </button>
-    </div>
-    <div class="col-md-12">
-        <div class="row">
-            <div class="col-md-4 col-sm-6 mt-30">
-                <div class="col-md-12 product-card">
-                    <div class="image-container">
-                        <img src="assets/images/product.jpg" >
-                        <div class="col-md-12 d-flex align-items-center height80">
-                            <div class="col-md-12 product-card-text">
-                                <p class="mb-0 medium font12">جلسه تنیس، یک ساعت</p>
-                                <p class="product-border"></p>
-                                <p class="mb-0 medium font16">قیمت:،۳۵۰،۰۰۰ تومان</p>
-                            </div>
-                        </div>
-                    </div>
+<div class="col-md-12 auth-bg">
+    <div class="col-md-10 offset-md-1 ltr">
+        <div class="col-xl-5 col-lg-5 col-md-6 col-sm-6 auth-card rtl">
+            <div>
+                <div class="btn-group auth-btn" role="group" aria-label="Basic example">
+                    <button type="button" id="loginBtn" class="btn medium active" onclick="showLogin()">ورود</button>
+                    <button type="button" id="registerBtn" class="btn medium" onclick="showRegister()">ثبت‌نام</button>
                 </div>
-            </div>
-            <div class="col-md-4 col-sm-6 mt-30">
-                <div class="col-md-12 product-card">
-                    <div class="image-container">
-                        <img src="assets/images/product.jpg" >
-                        <div class="col-md-12 d-flex align-items-center height80">
-                            <div class="col-md-12 product-card-text">
-                                <p class="mb-0 medium font12">جلسه تنیس، یک ساعت</p>
-                                <p class="product-border"></p>
-                                <p class="mb-0 medium font16">قیمت:،۳۵۰،۰۰۰ تومان</p>
-                            </div>
+                <div id="login" class="col-md-12 p-0">
+                    <form>
+                        <div class="form-group mt-30">
+                            <label for="username" class="medium">نام کاربری</label>
+                            <input type="text" class="form-control" id="username" >
                         </div>
-                    </div>
+                        <div class="form-group mt-30">
+                            <label for="password" class="medium">رمزعبور</label>
+                            <input type="password" class="form-control" id="password" >
+                        </div>
+                        <p class="font15 text-right col-md-12 p-0 medium">رمز عبور خود را فراموش کرده‌اید؟</p>
+                        <div class="col-md-12 p-0 text-center">
+                            <button type="submit" class="btn login-btn semibold">
+                                ورود
+                            </button>
+                        </div>
+                    </form>
                 </div>
-            </div>
-            <div class="col-md-4 col-sm-6 mt-30">
-                <div class="col-md-12 product-card">
-                    <div class="image-container">
-                        <img src="assets/images/product.jpg" >
-                        <div class="col-md-12 d-flex align-items-center height80">
-                            <div class="col-md-12 product-card-text">
-                                <p class="mb-0 medium font12">جلسه تنیس، یک ساعت</p>
-                                <p class="product-border"></p>
-                                <p class="mb-0 medium font16">قیمت:،۳۵۰،۰۰۰ تومان</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 mt-30">
-                <div class="col-md-12 product-card">
-                    <div class="image-container">
-                        <img src="assets/images/product.jpg" >
-                        <div class="col-md-12 d-flex align-items-center height80">
-                            <div class="col-md-12 product-card-text">
-                                <p class="mb-0 medium font12">جلسه تنیس، یک ساعت</p>
-                                <p class="product-border"></p>
-                                <p class="mb-0 medium font16">قیمت:،۳۵۰،۰۰۰ تومان</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 mt-30">
-                <div class="col-md-12 product-card">
-                    <div class="image-container">
-                        <img src="assets/images/product.jpg" >
-                        <div class="col-md-12 d-flex align-items-center height80">
-                            <div class="col-md-12 product-card-text">
-                                <p class="mb-0 medium font12">جلسه تنیس، یک ساعت</p>
-                                <p class="product-border"></p>
-                                <p class="mb-0 medium font16">قیمت:،۳۵۰،۰۰۰ تومان</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 mt-30">
-                <div class="col-md-12 product-card">
-                    <div class="image-container">
-                        <img src="assets/images/product.jpg" >
-                        <div class="col-md-12 d-flex align-items-center height80">
-                            <div class="col-md-12 product-card-text">
-                                <p class="mb-0 medium font12">جلسه تنیس، یک ساعت</p>
-                                <p class="product-border"></p>
-                                <p class="mb-0 medium font16">قیمت:،۳۵۰،۰۰۰ تومان</p>
-                            </div>
-                        </div>
-                    </div>
+                <div id="register" class="col-md-12" style="display: none">
+                    register
                 </div>
             </div>
         </div>
     </div>
+
+
 </div>
 
 <!--footer section-->
@@ -149,5 +89,19 @@
 <!--<script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>-->
 <script src="js/slick.js"></script>
 <script src="js/public.js"></script>
+<script>
+    function showLogin() {
+        $('#login').css('display', 'block');
+        $('#register').css('display', 'none');
+        $('#loginBtn').addClass('active');
+        $('#registerBtn').removeClass('active');
+    }
+    function showRegister() {
+        $('#login').css('display', 'none');
+        $('#register').css('display', 'block');
+        $('#loginBtn').removeClass('active');
+        $('#registerBtn').addClass('active');
+    }
+</script>
 </body>
 </html>

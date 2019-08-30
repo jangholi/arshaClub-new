@@ -426,6 +426,9 @@ a{
 .medium{
     font-family: diodrumMedium;
 }
+.semibold{
+    font-family: diodrumSemibold;
+}
 .pool-list{
      font-family: diodrumMedium;
      margin-right: 16px;
@@ -498,4 +501,62 @@ a{
 }
 .product-card-text{
     padding: 0!important;
+}
+/*------------------------------------------------ auth bg*/
+.auth-bg{
+    background-image: url("../assets/images/product.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px;
+}
+.auth-card{
+    border-radius: 20px;
+    background-color: white;
+    padding: 35px 35px;
+}
+.auth-btn{
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    width: 100%;
+}
+.auth-btn button{
+    padding: 11px 24px;
+    height: auto!important;
+    font-size: 18px;
+}
+.auth-btn .active{
+    background-color: #005f99;
+    color: white;
+    border-radius: 7px!important;
+}
+.auth-btn .active:hover {
+    color: white!important;
+}
+#login input{
+    height: calc(2.25rem + 3px)!important;
+    border-radius: .25rem!important;
+}
+#login label{
+    font-size: 15px;
+}
+.font15{
+    font-size: 15px!important;
+}
+.login-btn{
+    background-color: #005f99!important;
+    color: white!important;
+    border-radius: 7px!important;
+    height: auto!important;
+    width: 50%;
+    padding: 11px 24px!important;
+}
+#login input{
+    border: 0!important;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3)!important;
+}
+.ltr{
+    direction: ltr;
+}
+.rtl{
+    direction: rtl;
 }

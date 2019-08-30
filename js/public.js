@@ -90,3 +90,8 @@ $("#arsha-slider").slick({
     pauseOnHover: false,
     pauseOnDotsHover: false
 });
+//
+// $('#myTab a').on('click', function (e) {
+//     e.preventDefault()
+//     $(this).tab('show')
+// })
