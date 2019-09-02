@@ -92,7 +92,21 @@ html{
     display: none;
 }
 .third-slide{
-    background-image: url("../assets/images/slide-03.svg");
+     background-image: url("../assets/images/slide-03.svg");
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: bottom;
+     display: none;
+ }
+.forth-slide{
+    background-image: url("../assets/images/locker-slider-02.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    display: none;
+}
+.fifth-slide{
+    background-image: url("../assets/images/tennis-header.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
