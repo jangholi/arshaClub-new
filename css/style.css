@@ -83,16 +83,9 @@ html{
     background-size: cover;
     background-position: center;
 }
-.first-slide{
-    background-image: url("../assets/images/slide-01.svg");
-
-}
 .second-slide{
     background-image: url("../assets/images/slide-02.svg");
 }
-.third-slide{
-     background-image: url("../assets/images/slide-03.svg");
- }
 .forth-slide{
     background-image: url("../assets/images/IMG_3800.jpg");
 }
