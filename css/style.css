@@ -78,39 +78,38 @@ html{
 .hedset-icon{
     height: 90px!important;
 }
-.first-slide{
-    background-image: url("../assets/images/slide-01.svg");
+.intro-slider{
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom;
+    background-position: center;
+}
+.first-slide{
+    background-image: url("../assets/images/slide-01.svg");
+
 }
 .second-slide{
     background-image: url("../assets/images/slide-02.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
-    display: none;
 }
 .third-slide{
      background-image: url("../assets/images/slide-03.svg");
-     background-repeat: no-repeat;
-     background-size: cover;
-     background-position: bottom;
-     display: none;
  }
 .forth-slide{
-    background-image: url("../assets/images/locker-slider-02.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
-    display: none;
+    background-image: url("../assets/images/IMG_3800.jpg");
 }
 .fifth-slide{
     background-image: url("../assets/images/tennis-header.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
-    display: none;
+}
+.sixth-slide{
+    background-image: url("../assets/images/IMG_3786.jpg");
+}
+.seven-slide{
+    background-image: url("../assets/images/IMG_3677.jpg");
+}
+.eight-slide{
+    background-image: url("../assets/images/IMG_3713.jpg");
+}
+.nine-slide{
+    background-image: url("../assets/images/IMG_3996.jpg");
 }
 .into-slider .slick-dots li button:before{
     opacity: 1!important;
