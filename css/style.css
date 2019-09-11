@@ -78,25 +78,31 @@ html{
 .hedset-icon{
     height: 90px!important;
 }
-.first-slide{
-    background-image: url("../assets/images/slide-01.svg");
+.intro-slider{
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom;
+    background-position: center;
 }
 .second-slide{
-    background-image: url("../assets/images/slide-02.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
-    display: none;
+    background-image: url("../assets/images/slide-02.png");
 }
-.third-slide{
-    background-image: url("../assets/images/slide-03.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
-    display: none;
+.forth-slide{
+    background-image: url("../assets/images/IMG_3800.jpg");
+}
+.fifth-slide{
+    background-image: url("../assets/images/tennis-header.jpg");
+}
+.sixth-slide{
+    background-image: url("../assets/images/IMG_3786.jpg");
+}
+.seven-slide{
+    background-image: url("../assets/images/IMG_3677.jpg");
+}
+.eight-slide{
+    background-image: url("../assets/images/IMG_3713.jpg");
+}
+.nine-slide{
+    background-image: url("../assets/images/IMG_3996.jpg");
 }
 .into-slider .slick-dots li button:before{
     opacity: 1!important;
@@ -193,7 +199,7 @@ html{
     border-radius: 0!important;
     padding: 16px!important;
     height: auto!important;
-    font-size: 25px!important;
+    font-size: 20px!important;
     font-family: 'diodrumSemibold'!important;
 }
 .about-slider{
@@ -304,6 +310,12 @@ html{
 /* -------------------------------------------------- global classes */
 .mt-30{
     margin-top: 30px!important;
+}
+.mt-80{
+    margin-top: 80px!important;
+}
+.mb-0{
+    margin-bottom: 0px!important;
 }
 .mb-30{
     margin-bottom: 30px!important;
@@ -420,6 +432,9 @@ a{
 .medium{
     font-family: diodrumMedium;
 }
+.semibold{
+    font-family: diodrumSemibold;
+}
 .pool-list{
      font-family: diodrumMedium;
      margin-right: 16px;
@@ -440,4 +455,153 @@ a{
 }
 .about-header{
     object-position: bottom;
+}
+/*------------------------  add this css now ------------------------------------ */
+.pl-50{
+    padding-left: 50px!important;
+}
+.product-card{
+    overflow: hidden;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+}
+.product-card .image-container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    left: 0;
+    top: 0;
+}
+.product-card:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+.product-card .image-container img{
+    width: 100%;
+    object-fit: cover!important;
+    height: calc(100% - (80px));
+}
+.product-card-text p{
+    color: rgb(77, 77, 77);
+}
+.product-border{
+    border-top: 2px solid #003054!important;
+    margin: 9px 0 9px 0;
+}
+.font12{
+    font-size: 12px;
+}
+.font16{
+    font-size: 14px;
+}
+.height80{
+    height: 80px;
+}
+.height55{
+    height: 55px!important;
+}
+.mt-30{
+ margin-top: 30px!important;
+}
+.color-arsha{
+    background: #E4E4E4;
+}
+.product-card-text{
+    padding: 0!important;
+}
+/*------------------------------------------------ auth bg*/
+.auth-bg{
+    background-image: url("../assets/images/product.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px;
+}
+.auth-card{
+    border-radius: 20px;
+    background-color: white;
+    padding: 35px 35px;
+}
+.auth-btn{
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    width: 100%;
+}
+.auth-btn button{
+    padding: 11px 24px;
+    height: auto!important;
+    font-size: 18px;
+}
+.auth-btn .active{
+    background-color: #005f99;
+    color: white;
+    border-radius: 7px!important;
+}
+.auth-btn .active:hover {
+    color: white!important;
+}
+#login input{
+    height: calc(2.25rem + 3px)!important;
+    border-radius: .25rem!important;
+}
+#login label{
+    font-size: 15px;
+}
+.font15{
+    font-size: 15px!important;
+}
+.login-btn{
+    background-color: #005f99!important;
+    color: white!important;
+    border-radius: 7px!important;
+    height: auto!important;
+    width: 50%;
+    padding: 11px 24px!important;
+}
+#login input{
+    border: 0!important;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3)!important;
+}
+.ltr{
+    direction: ltr;
+}
+.rtl{
+    direction: rtl;
+}
+.product-card .product-image{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    left: 0;
+    top: 0;
+}
+.product-card .product-image img{
+    width: 100%;
+    object-fit: cover!important;
+    height: calc(100% - (55px));
+}
+.full-border{
+    border: 1px solid black;
+}
+.cart-bold-text{
+    color: rgb(77, 77,77);
+    font-size: 19px;
+    font-family: diodrumSemibold;
+}
+.sign{
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    padding: 3px 13px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.ml-10{
+    margin-left: 10px;
+}
+.mr-10{
+    margin-right: 10px;
+}
+.pt-10{
+    padding-top: 10px!important;
 }
