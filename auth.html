@@ -26,7 +26,7 @@
         <!--<div class="col-xl-5 col-lg-5 col-md-6 col-sm-6 auth-card rtl">-->
         <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 auth-card rtl">
             <div>
-                <div class="btn-group auth-btn" role="group" aria-label="Basic example">
+                <div class="btn-group auth-btn" role="group" aria-label="Basic example" id='authBtn'>
                     <button type="button" id="loginBtn" class="btn medium active" onclick="showLogin()">ورود</button>
                     <button type="button" id="registerBtn" class="btn medium" onclick="showRegister()">ثبت‌نام</button>
                 </div>
@@ -265,6 +265,7 @@
     function nextRegisterPage() {
         $('#firstRegisterStep').css('display', 'none');
         $('#secondRegisterStep').css('display', 'block');
+        $('#authBtn').css('display', 'none');
     }
 
 </script>
