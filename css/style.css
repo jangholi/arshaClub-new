@@ -626,3 +626,18 @@ a{
 .mt-15{
     margin-top: 15px;
 }
+.jq-toast-single{
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3)!important;
+    padding: 18px!important;
+    border-radius: 10px!important;
+}
+.jq-icon-success{
+    /*background-size: contain!important;*/
+    background-image: url("../assets/images/checkmark.png")!important;
+}
+.jq-icon-warning{
+    background-image: url("../assets/images/warning.jpg")!important;
+}
+.jq-icon-error{
+    background-image: url("../assets/images/times.png")!important;
+}

@@ -10,6 +10,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-toast-plugin/1.3.2/jquery.toast.css"/>
+
 </head>
 <body dir="rtl">
     <!-- first section -->
@@ -217,7 +219,7 @@
                             </div>
                             <div class="row modal-footer-container">
                                 <div class="form-group mt-15 col-md-12">
-                                    <button type="button" class="btn login-btn semibold col-md-3 ml-15 pull-left">
+                                    <button type="button" class="btn login-btn semibold col-md-3 ml-15 pull-left" onclick="submitPreRegistration()">
                                         ثبت نهایی
                                     </button>
                                 </div>
@@ -372,10 +374,46 @@
 <!--<script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>-->
 <script src="js/slick.js"></script>
 <script src="js/public.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-toast-plugin/1.3.2/jquery.toast.js"></script>
 <script>
     function nextRegisterPage() {
         $('#firstRegisterStep').css('display', 'none');
         $('#secondRegisterStep').css('display', 'block');
+    }
+    function submitPreRegistration() {
+        $.toast({
+            text: 'save succefully',
+            icon: 'success',
+            position: 'top-center',
+            textAlign: 'right',
+            allowToastClose: false,
+            loader: false,
+            bgColor: '#ffffff',
+            textColor: '#000000',
+            hideAfter: 50000000000000000
+        })
+        $.toast({
+            text: 'this is warning',
+            icon: 'warning',
+            position: 'top-center',
+            textAlign: 'right',
+            allowToastClose: false,
+            loader: false,
+            bgColor: '#ffffff',
+            textColor: '#000000',
+            hideAfter: 50000000000000000
+        })
+        $.toast({
+            text: 'this is error',
+            icon: 'error',
+            position: 'top-center',
+            textAlign: 'right',
+            allowToastClose: false,
+            loader: false,
+            bgColor: '#ffffff',
+            textColor: '#000000',
+            hideAfter: 50000000000000000
+        })
     }
 </script>
 </body>
