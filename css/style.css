@@ -632,7 +632,6 @@ a{
     border-radius: 10px!important;
 }
 .jq-icon-success{
-    /*background-size: contain!important;*/
     background-image: url("../assets/images/checkmark.png")!important;
 }
 .jq-icon-warning{
