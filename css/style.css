@@ -617,3 +617,12 @@ a{
 .pull-left{
     float: left;
 }
+.modal-footer-container{
+    border-top: 1px solid #e9ecef;
+    margin-right: -30px!important;
+    margin-left: -30px!important;
+    margin-top: 30px!important;
+}
+.mt-15{
+    margin-top: 15px;
+}

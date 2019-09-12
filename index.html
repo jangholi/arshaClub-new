@@ -41,7 +41,7 @@
                     </div>
                     <div class="col-xl-4 col-lg-4 col-sm-12 p-0">
                         <div class="registery-div d-flex align-items-center justify-content-center">
-                            <p class="blue-title pointer" id="registerMenu">فرم پیش ثبت‌نام</p>
+                            <p class="blue-title pointer" data-toggle="modal" data-target="#myModal">فرم پیش ثبت‌نام</p>
                         </div>
                     </div>
                     <div class="col-xl-4 col-lg-4 col-sm-12 d-flex align-items-center justify-content-center">
@@ -50,6 +50,190 @@
                 </div>
             </div>
     </div>
+
+    <!-- register Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">فرم پیش ثبت‌نام</h5>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body pb-0">
+                    <div id="register" class="col-md-12 auth">
+                        <form id="firstRegisterStep" class="mb-0">
+                            <div class="row">
+                                <div class="form-group mt-30 col-md-6">
+                                    <label class="medium">نام اصلی/نام مستعار</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                                <div class="form-group mt-30 col-md-6">
+                                    <label class="medium">نام خانوادگی</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group mt-30 col-md-6">
+                                    <label class="medium">کد ملی</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                                <div class="form-group mt-30 col-md-6">
+                                    <label class="medium">تاریخ تولد</label>
+                                    <div class="row m-0">
+                                        <div class="col-md-4 pl-0">
+                                            <input type="text" class="form-control" placeholder="روز">
+                                        </div>
+                                        <div class="col-md-4 pl-0">
+                                            <input type="text" class="form-control" placeholder="ماه">
+                                        </div>
+                                        <div class="col-md-4 pl-0">
+                                            <input type="text" class="form-control" placeholder="سال">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group mt-30 col-md-6">
+                                    <label class="medium">محل تولد</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                                <div class="form-group mt-30 col-md-6">
+                                    <label class="medium">شغل</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group mt-30 col-md-6">
+                                    <label class="medium">وضعیت تاهل</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group mt-30 col-md-6">
+                                    <label class="medium">نام و نام خانوادگی همسر</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                                <div class="form-group mt-30 col-md-6">
+                                    <label class="medium">تاریخ تولد</label>
+                                    <div class="row m-0">
+                                        <div class="col-md-4 pl-0">
+                                            <input type="text" class="form-control" placeholder="روز">
+                                        </div>
+                                        <div class="col-md-4 pl-0">
+                                            <input type="text" class="form-control" placeholder="ماه">
+                                        </div>
+                                        <div class="col-md-4 pl-0">
+                                            <input type="text" class="form-control" placeholder="سال">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group mt-30 col-md-6">
+                                    <label class="medium">نام و نام خانوادگی فرزند</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                                <div class="form-group mt-30 col-md-6">
+                                    <label class="medium">تاریخ تولد</label>
+                                    <div class="row m-0">
+                                        <div class="col-md-4 pl-0">
+                                            <input type="text" class="form-control" placeholder="روز">
+                                        </div>
+                                        <div class="col-md-4 pl-0">
+                                            <input type="text" class="form-control" placeholder="ماه">
+                                        </div>
+                                        <div class="col-md-4 pl-0">
+                                            <input type="text" class="form-control" placeholder="سال">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row modal-footer-container">
+                                <div class="form-group mt-15 col-md-12">
+                                    <button type="button" class="btn login-btn semibold col-md-3 ml-15 pull-left" onclick="nextRegisterPage()">
+                                        مرحله بعد
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                        <form id="secondRegisterStep" style="display: none" class="mb-0">
+                            <div class="row">
+                                <div class="form-group mt-30 col-md-6">
+                                    <label class="medium">شماره تلفن همراه:</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                                <div class="form-group mt-30 col-md-6">
+                                    <label class="medium">شماره تلفن ثابت:</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group mt-30 col-md-12">
+                                    <label class="medium">آدرس منزل:</label>
+                                    <textarea rows="3" cols="50" class="form-control" ></textarea>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group mt-30 col-md-12">
+                                    <label class="medium">آدرس محل کار:</label>
+                                    <textarea rows="3" cols="50" class="form-control" ></textarea>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group mt-30 col-md-6">
+                                    <label class="medium">سوابق ورزشی حرفه‌ای:</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                                <div class="form-group mt-30 col-md-6">
+                                    <label class="medium">علائق ورزشی:</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group mt-30 col-md-12">
+                                    <label class="medium">سوابق عضویت در سایر باشگاه‌ها:</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group mt-30 col-md-6">
+                                    <label class="medium">پلاک خودرو:</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                                <div class="form-group mt-30 col-md-6">
+                                    <label class="medium">مشخصات راننده یا همراه:</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group mt-30 col-md-6">
+                                    <label class="medium">عضویت در شبکه‌های اجتماعی و پیام رسان:</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                                <div class="form-group mt-30 col-md-6">
+                                    <label class="medium">معرف:</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                            </div>
+                            <div class="row modal-footer-container">
+                                <div class="form-group mt-15 col-md-12">
+                                    <button type="button" class="btn login-btn semibold col-md-3 ml-15 pull-left">
+                                        ثبت نهایی
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!--<div class="modal-footer">-->
+                    <!--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
+                <!--</div>-->
+            </div>
+        </div>
+    </div>
+    <!-- end register Modal -->
+
+
     <!-- second section -->
         <div class="col-md-8 offset-md-2 pt-60 pb-60 mb-30">
             <p class="blue-title">بخش‌ها و امکانات</p>
@@ -127,7 +311,7 @@
             </div>
         </div>
     <!-- register -->
-    <!--<div class="container-fluid" id="register">-->
+    <!--<div class="container-fluid">-->
         <!--<div class="row dark-blue-bg pt-60 pb-60">-->
             <!--<div class="col-xl-5 col-lg-5 offset-md-1 col-sm-10 offset-sm-1 d-flex align-items-start justify-content-center mt-30 mb-30">-->
                 <!--<div>-->
@@ -184,8 +368,15 @@
     </div>
 <script src="https://kit.fontawesome.com/15c0d284e6.js"></script>
 <script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
 <!--<script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>-->
 <script src="js/slick.js"></script>
 <script src="js/public.js"></script>
+<script>
+    function nextRegisterPage() {
+        $('#firstRegisterStep').css('display', 'none');
+        $('#secondRegisterStep').css('display', 'block');
+    }
+</script>
 </body>
 </html>

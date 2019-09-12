@@ -1,8 +1,3 @@
-$('#registerMenu').click(function() {
-    $('html, body').animate({
-        scrollTop: $("#register").offset().top
-    }, 2000);
-})
 $('#3MonthBaseMenu').click(function() {
     $('html, body').animate({
         scrollTop: $("#3MonthBase").offset().top
