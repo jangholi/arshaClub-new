@@ -541,6 +541,11 @@ a{
     color: white;
     border-radius: 7px!important;
 }
+.auth-btn .active-marry{
+    background-color: #e2e2e2;
+    color: black;
+    border-radius: 7px!important;
+}
 .auth-btn .active:hover {
     color: white!important;
 }
