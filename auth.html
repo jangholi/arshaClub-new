@@ -23,8 +23,8 @@
 <!-- second section -->
 <div class="col-md-12 auth-bg">
     <div class="col-md-10 offset-md-1 ltr">
-        <!--<div class="col-xl-5 col-lg-5 col-md-6 col-sm-6 auth-card rtl">-->
-        <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 auth-card rtl">
+        <div class="col-lg-5 col-md-6 auth-card rtl">
+        <!--<div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 auth-card rtl">-->
             <div>
                 <div class="btn-group auth-btn" role="group" aria-label="Basic example" id='authBtn'>
                     <button type="button" id="loginBtn" class="btn medium active" onclick="showLogin()">ورود</button>
@@ -302,12 +302,20 @@
         $('#register').css('display', 'none');
         $('#loginBtn').addClass('active');
         $('#registerBtn').removeClass('active');
+        $('.auth-card').addClass('col-md-6');
+        $('.auth-card').addClass('col-lg-5');
+        $('.auth-card').removeClass('col-md-10');
     }
+    // <!--<div class="col-xl-5 col-lg-5 col-md-6 col-sm-6 auth-card rtl">-->
+    // <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 auth-card rtl">
     function showRegister() {
         $('#login').css('display', 'none');
         $('#register').css('display', 'block');
         $('#loginBtn').removeClass('active');
         $('#registerBtn').addClass('active');
+        $('.auth-card').removeClass('col-md-6');
+        $('.auth-card').removeClass('col-lg-5');
+        $('.auth-card').addClass('col-md-10');
     }
     function nextRegisterPage() {
         $('#firstRegisterStep').css('display', 'none');
