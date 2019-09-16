@@ -326,17 +326,26 @@ html{
 .mb-100{
     margin-bottom: 100px!important;
 }
-.pt-60{
-    padding-top: 60px!important;
+.pt-25{
+    padding-top: 25px!important;
 }
+.pt-60{
+     padding-top: 60px!important;
+ }
 .pb-60{
     padding-bottom: 60px!important;
+}
+.pb-25{
+    padding-bottom: 25px!important;
 }
 .pt-90{
     padding-top: 90px!important;
 }
 .pb-90{
     padding-bottom: 90px!important;
+}
+.mt_6{
+    margin-top: -6px!important;
 }
 input{
     border-radius: 0!important;
@@ -493,8 +502,17 @@ a{
     border-top: 2px solid #003054!important;
     margin: 9px 0 9px 0;
 }
+.font10{
+    font-size: 10px;
+}
 .font12{
     font-size: 12px;
+}
+.font14{
+    font-size: 14px!important;
+}
+.font15{
+    font-size: 15px!important;
 }
 .font16{
     font-size: 14px;
@@ -559,9 +577,6 @@ a{
     font-size: 15px;
     color: rgb(77, 77, 77)!important;
 }
-.font15{
-    font-size: 15px!important;
-}
 .login-btn{
     background-color: #005f99!important;
     color: white!important;
@@ -616,6 +631,12 @@ a{
 .pt-10{
     padding-top: 10px!important;
 }
+.pb-10{
+    padding-bottom: 10px!important;
+}
+.mr_10{
+    margin-right: -10px;
+}
 .ml-15{
     margin-left: 15px;
 }
@@ -631,6 +652,9 @@ a{
 .mt-15{
     margin-top: 15px;
 }
+.mb-15{
+    margin-bottom: 15px!important;
+}
 .jq-toast-single{
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3)!important;
     padding: 18px!important;
@@ -644,4 +668,20 @@ a{
 }
 .jq-icon-error{
     background-image: url("../assets/images/times.png")!important;
+}
+.shadow-card{
+    overflow: hidden;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+}
+.white-bg{
+    background-color: white!important;
+}
+.city-container{
+    border-left: 1px solid gray;
+}
+@media only screen and (max-width: 575px) {
+    .city-container {
+        border-left: 0!important;
+    }
 }
