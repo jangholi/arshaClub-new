@@ -341,6 +341,9 @@ html{
 input{
     border-radius: 0!important;
 }
+.textarea{
+    border-radius: 0!important;
+}
 .green-color{
     color: rgb(0, 165, 81);
     font-size: 18px;
@@ -538,15 +541,23 @@ a{
     color: white;
     border-radius: 7px!important;
 }
+.auth-btn .active-marry{
+    background-color: #e2e2e2;
+    color: black;
+    border-radius: 7px!important;
+}
 .auth-btn .active:hover {
     color: white!important;
 }
-#login input{
+.auth input{
     height: calc(2.25rem + 3px)!important;
+}
+.auth input, textarea{
     border-radius: .25rem!important;
 }
-#login label{
+.auth label{
     font-size: 15px;
+    color: rgb(77, 77, 77)!important;
 }
 .font15{
     font-size: 15px!important;
@@ -559,7 +570,7 @@ a{
     width: 50%;
     padding: 11px 24px!important;
 }
-#login input{
+.auth input, textarea{
     border: 0!important;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3)!important;
 }
@@ -604,4 +615,33 @@ a{
 }
 .pt-10{
     padding-top: 10px!important;
+}
+.ml-15{
+    margin-left: 15px;
+}
+.pull-left{
+    float: left;
+}
+.modal-footer-container{
+    border-top: 1px solid #e9ecef;
+    margin-right: -30px!important;
+    margin-left: -30px!important;
+    margin-top: 30px!important;
+}
+.mt-15{
+    margin-top: 15px;
+}
+.jq-toast-single{
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3)!important;
+    padding: 18px!important;
+    border-radius: 10px!important;
+}
+.jq-icon-success{
+    background-image: url("../assets/images/checkmark.png")!important;
+}
+.jq-icon-warning{
+    background-image: url("../assets/images/warning.jpg")!important;
+}
+.jq-icon-error{
+    background-image: url("../assets/images/times.png")!important;
 }

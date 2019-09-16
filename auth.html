@@ -8,8 +8,6 @@
     <!--<link rel="stylesheet" href="css/bootstrap.css">-->
     <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.2.1/css/bootstrap.min.css" integrity="sha384-vus3nQHTD+5mpDiZ4rkEPlnkcyTP+49BhJ4wJeJunw06ZAp+wzzeBPUXr42fi8If" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
 </head>
 <body dir="rtl">
 <!-- first section -->
@@ -25,13 +23,14 @@
 <!-- second section -->
 <div class="col-md-12 auth-bg">
     <div class="col-md-10 offset-md-1 ltr">
-        <div class="col-xl-5 col-lg-5 col-md-6 col-sm-6 auth-card rtl">
+        <div class="col-lg-5 col-md-6 auth-card rtl">
+        <!--<div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 auth-card rtl">-->
             <div>
-                <div class="btn-group auth-btn" role="group" aria-label="Basic example">
+                <div class="btn-group auth-btn" role="group" aria-label="Basic example" id='authBtn'>
                     <button type="button" id="loginBtn" class="btn medium active" onclick="showLogin()">ورود</button>
                     <button type="button" id="registerBtn" class="btn medium" onclick="showRegister()">ثبت‌نام</button>
                 </div>
-                <div id="login" class="col-md-12 p-0">
+                <div id="login" class="col-md-12 p-0 auth">
                     <form>
                         <div class="form-group mt-30">
                             <label for="username" class="medium">نام کاربری</label>
@@ -49,8 +48,216 @@
                         </div>
                     </form>
                 </div>
-                <div id="register" class="col-md-12" style="display: none">
-                    register
+                <div id="register" class="col-md-12 auth" style="display: none">
+                    <form id="firstRegisterStep">
+                        <div class="row">
+                                <div class="form-group mt-30 col-md-6">
+                                    <label class="medium">نام اصلی/نام مستعار</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                                <div class="form-group mt-30 col-md-6">
+                                    <label class="medium">نام خانوادگی</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group mt-30 col-md-6">
+                                <label class="medium">کد ملی</label>
+                                <input type="text" class="form-control" >
+                            </div>
+                            <div class="form-group mt-30 col-md-6">
+                                <label class="medium">تاریخ تولد</label>
+                                <div class="row m-0">
+                                    <div class="col-md-4 pl-0">
+                                        <input type="text" class="form-control" placeholder="روز">
+                                    </div>
+                                    <div class="col-md-4 pl-0">
+                                        <input type="text" class="form-control" placeholder="ماه">
+                                    </div>
+                                    <div class="col-md-4 pl-0">
+                                        <input type="text" class="form-control" placeholder="سال">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group mt-30 col-md-6">
+                                <label class="medium">محل تولد</label>
+                                <input type="text" class="form-control" >
+                            </div>
+                            <div class="form-group mt-30 col-md-6">
+                                <label class="medium">شغل</label>
+                                <input type="text" class="form-control" >
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group mt-30 col-md-6">
+                                <label class="medium">وضعیت تاهل</label>
+                                <div class="btn-group auth-btn" role="group" aria-label="Basic example">
+                                    <button type="button" id="singleBtn" class="btn medium active-marry" onclick="showSingle()">مجرد</button>
+                                    <button type="button" id="marriedBtn" class="btn medium" onclick="showMarried()">متاهل</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 p-0" id="single-block">
+                            <div class="row">
+                                <div class="form-group mt-30 col-md-6">
+                                    <label class="medium">نام و نام خانوادگی پدر</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                                <div class="form-group mt-30 col-md-6">
+                                    <label class="medium">تاریخ تولد</label>
+                                    <div class="row m-0">
+                                        <div class="col-md-4 pl-0">
+                                            <input type="text" class="form-control" placeholder="روز">
+                                        </div>
+                                        <div class="col-md-4 pl-0">
+                                            <input type="text" class="form-control" placeholder="ماه">
+                                        </div>
+                                        <div class="col-md-4 pl-0">
+                                            <input type="text" class="form-control" placeholder="سال">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group mt-30 col-md-6">
+                                    <label class="medium">نام و نام خانوادگی مادر</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                                <div class="form-group mt-30 col-md-6">
+                                    <label class="medium">تاریخ تولد</label>
+                                    <div class="row m-0">
+                                        <div class="col-md-4 pl-0">
+                                            <input type="text" class="form-control" placeholder="روز">
+                                        </div>
+                                        <div class="col-md-4 pl-0">
+                                            <input type="text" class="form-control" placeholder="ماه">
+                                        </div>
+                                        <div class="col-md-4 pl-0">
+                                            <input type="text" class="form-control" placeholder="سال">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 p-0" id="married-block" style="display: none">
+                            <div class="row">
+                                <div class="form-group mt-30 col-md-6">
+                                    <label class="medium">نام و نام خانوادگی همسر</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                                <div class="form-group mt-30 col-md-6">
+                                    <label class="medium">تاریخ تولد</label>
+                                    <div class="row m-0">
+                                        <div class="col-md-4 pl-0">
+                                            <input type="text" class="form-control" placeholder="روز">
+                                        </div>
+                                        <div class="col-md-4 pl-0">
+                                            <input type="text" class="form-control" placeholder="ماه">
+                                        </div>
+                                        <div class="col-md-4 pl-0">
+                                            <input type="text" class="form-control" placeholder="سال">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group mt-30 col-md-6">
+                                    <label class="medium">نام و نام خانوادگی فرزند</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                                <div class="form-group mt-30 col-md-6">
+                                    <label class="medium">تاریخ تولد</label>
+                                    <div class="row m-0">
+                                        <div class="col-md-4 pl-0">
+                                            <input type="text" class="form-control" placeholder="روز">
+                                        </div>
+                                        <div class="col-md-4 pl-0">
+                                            <input type="text" class="form-control" placeholder="ماه">
+                                        </div>
+                                        <div class="col-md-4 pl-0">
+                                            <input type="text" class="form-control" placeholder="سال">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group mt-30 col-md-12">
+                                <button type="button" class="btn login-btn semibold col-md-3 ml-15 pull-left" onclick="nextRegisterPage()">
+                                    مرحله بعد
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                    <form id="secondRegisterStep" style="display: none">
+                        <div class="row">
+                            <div class="form-group mt-30 col-md-6">
+                                <label class="medium">شماره تلفن همراه:</label>
+                                <input type="text" class="form-control" >
+                            </div>
+                            <div class="form-group mt-30 col-md-6">
+                                <label class="medium">شماره تلفن ثابت:</label>
+                                <input type="text" class="form-control" >
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group mt-30 col-md-12">
+                                <label class="medium">آدرس منزل:</label>
+                                <textarea rows="3" cols="50" class="form-control" ></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group mt-30 col-md-12">
+                                <label class="medium">آدرس محل کار:</label>
+                                <textarea rows="3" cols="50" class="form-control" ></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group mt-30 col-md-6">
+                                <label class="medium">سوابق ورزشی حرفه‌ای:</label>
+                                <input type="text" class="form-control" >
+                            </div>
+                            <div class="form-group mt-30 col-md-6">
+                                <label class="medium">علائق ورزشی:</label>
+                                <input type="text" class="form-control" >
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group mt-30 col-md-12">
+                                <label class="medium">سوابق عضویت در سایر باشگاه‌ها:</label>
+                                <input type="text" class="form-control" >
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group mt-30 col-md-6">
+                                <label class="medium">پلاک خودرو:</label>
+                                <input type="text" class="form-control" >
+                            </div>
+                            <div class="form-group mt-30 col-md-6">
+                                <label class="medium">مشخصات راننده یا همراه:</label>
+                                <input type="text" class="form-control" >
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group mt-30 col-md-6">
+                                <label class="medium">عضویت در شبکه‌های اجتماعی و پیام رسان:</label>
+                                <input type="text" class="form-control" >
+                            </div>
+                            <div class="form-group mt-30 col-md-6">
+                                <label class="medium">معرف:</label>
+                                <input type="text" class="form-control" >
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group mt-30 col-md-12">
+                                <button type="button" class="btn login-btn semibold col-md-3 ml-15 pull-left">
+                                    ثبت نهایی
+                                </button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -95,12 +302,37 @@
         $('#register').css('display', 'none');
         $('#loginBtn').addClass('active');
         $('#registerBtn').removeClass('active');
+        $('.auth-card').addClass('col-md-6');
+        $('.auth-card').addClass('col-lg-5');
+        $('.auth-card').removeClass('col-md-10');
     }
+    // <!--<div class="col-xl-5 col-lg-5 col-md-6 col-sm-6 auth-card rtl">-->
+    // <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 auth-card rtl">
     function showRegister() {
         $('#login').css('display', 'none');
         $('#register').css('display', 'block');
         $('#loginBtn').removeClass('active');
         $('#registerBtn').addClass('active');
+        $('.auth-card').removeClass('col-md-6');
+        $('.auth-card').removeClass('col-lg-5');
+        $('.auth-card').addClass('col-md-10');
+    }
+    function nextRegisterPage() {
+        $('#firstRegisterStep').css('display', 'none');
+        $('#secondRegisterStep').css('display', 'block');
+        $('#authBtn').css('display', 'none');
+    }
+    function showSingle() {
+        $('#married-block').css('display', 'none');
+        $('#single-block').css('display', 'block');
+        $('#singleBtn').addClass('active-marry');
+        $('#marriedBtn').removeClass('active-marry');
+    }
+    function showMarried() {
+        $('#single-block').css('display', 'none');
+        $('#married-block').css('display', 'block');
+        $('#marriedBtn').addClass('active-marry');
+        $('#singleBtn').removeClass('active-marry');
     }
 </script>
 </body>
